@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace BLL.Services
 {
-    public class HttpService : HttpClient, IHttpService
+    public class HttpService : IHttpService
     {     
-        public HttpResponseMessage Request (string url)
+        public HttpResponseMessage GetAsyncHtml(string url)
         {
-            BaseAddress = new Uri(url);
-            DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            return GetAsync(url).Result;
+            HttpClient httpClient = new HttpClient();
+            httpClient.BaseAddress = new Uri(url);
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/html"));
+            return httpClient.GetAsync(url).Result;
         }
 
-        async public Task<string> HttpResponseToString (HttpResponseMessage httpResponse)
+        async public Task<string> HttpResponseToString(HttpResponseMessage httpResponse)
         {
             return await httpResponse.Content.ReadAsStringAsync();
         }

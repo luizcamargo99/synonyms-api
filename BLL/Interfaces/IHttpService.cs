@@ -5,7 +5,7 @@ namespace BLL.Interfaces
 {
     public interface IHttpService
     {
-        public HttpResponseMessage Request(string url);
+        public HttpResponseMessage GetAsyncHtml(string url);
         public Task<string> HttpResponseToString(HttpResponseMessage httpResponse);
 
     }

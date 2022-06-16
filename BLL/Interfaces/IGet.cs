@@ -4,6 +4,6 @@ namespace BLL.Interfaces
 {
     public interface IGet
     {
-        public Response Action();
+        public Response Get();
     }
 }

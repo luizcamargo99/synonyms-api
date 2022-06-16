@@ -2,15 +2,14 @@
 
 namespace BLL.Models
 {
-    public class ResponseSynonym : Response
+    public class SynonymResponse : Response
     {
         public List<string> SynonymsList { get; set; }
         public string Word { get; set; }
 
-        public ResponseSynonym(string word)
+        public SynonymResponse()
         {
             SynonymsList = new List<string>();
-            Word = word;
         }
     }
 }

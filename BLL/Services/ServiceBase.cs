@@ -15,7 +15,7 @@ namespace BLL.Services
             _get = get;
         }
 
-        public Response Action ()
+        public Response Action()
         {
             Response response = new Response();
 

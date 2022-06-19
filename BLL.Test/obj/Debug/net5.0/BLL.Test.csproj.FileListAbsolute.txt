@@ -101,4 +101,3 @@ C:\Projetos Academicos\Words API\src\BLL.Test\obj\Debug\net5.0\BLL.Test.dll
 C:\Projetos Academicos\Words API\src\BLL.Test\obj\Debug\net5.0\ref\BLL.Test.dll
 C:\Projetos Academicos\Words API\src\BLL.Test\obj\Debug\net5.0\BLL.Test.pdb
 C:\Projetos Academicos\Words API\src\BLL.Test\obj\Debug\net5.0\BLL.Test.genruntimeconfig.cache
-C:\Projetos Academicos\Words API\src\BLL.Test\bin\Debug\net5.0\HtmlAgilityPack.dll

@@ -7,22 +7,17 @@ namespace BLL.Test
 {
     public class TestSynonymServiceSuccess
     {
-        [Fact]
-        public void TestWordAmor()
+        [Theory]
+        [InlineData("amor")]
+        [InlineData("Portanto")]
+        [InlineData("testE")]
+        public void TestGetSynonym(string word)
         {
-            string word = "amor";
-            IService synonymService = new SynonymService(new ValidateWordSynonym(word), new GetSynonym(word, new HttpService()));
-            var response = (SynonymResponse)synonymService.Action();
-            Assert.True(response.SynonymsList.Count > 0);
-        }
-
-        [Fact]
-        public void TestWordPortanto()
-        {
-            string word = "Portanto";
-            IService synonymService = new SynonymService(new ValidateWordSynonym(word), new GetSynonym(word, new HttpService()));
-            var response = (SynonymResponse)synonymService.Action();
-            Assert.True(response.SynonymsList.Count > 0);
+            IValidate validate = new ValidateWordSynonym(word);
+            IGet get = new GetSynonym(word, new HttpService());
+            IService service = new ServiceBase(validate, get);
+            Response response = service.Action();
+            Assert.Null(response.ErrorMessage);
         }
     }
 }

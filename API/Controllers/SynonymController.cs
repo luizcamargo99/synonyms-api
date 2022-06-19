@@ -15,8 +15,7 @@ namespace API.Controllers
             IValidate validate = new ValidateWordSynonym(word);
             IGet get = new GetSynonym(word, new HttpService());
             IService service = new ServiceBase(validate, get);
-            Response response = service.Action();
-            return response;
+            return service.Action();
         }
     }
 }

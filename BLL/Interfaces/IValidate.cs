@@ -1,4 +1,6 @@
-﻿namespace BLL.Interfaces
+﻿using BLL.Models;
+
+namespace BLL.Interfaces
 {
     public interface IValidate
     {

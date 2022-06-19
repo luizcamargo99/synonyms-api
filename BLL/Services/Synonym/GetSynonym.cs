@@ -23,13 +23,13 @@ namespace BLL.Services
 
         public Response Get()
         {
-            SynonymResponse response = new SynonymResponse();
+            SynonymResponse response = new SynonymResponse{ Word = _word };
             string newWord = _word.TrimStart().TrimEnd().Replace(" ", "-");
             HttpResponseMessage httpResponse = _httpService.GetAsyncHtml(string.Concat(_apiUrl, newWord));
 
             if (httpResponse.IsSuccessStatusCode == false)
             {
-                throw new HttpRequestException("No synonyms found for the word");
+                throw new HttpRequestException($"No synonyms found for {_word}");
             }
 
             var content = _httpService.HttpResponseToString(httpResponse).Result;

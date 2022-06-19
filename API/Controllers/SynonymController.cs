@@ -2,11 +2,6 @@
 using BLL.Models;
 using BLL.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace API.Controllers
 {
@@ -15,11 +10,12 @@ namespace API.Controllers
     public class SynonymController : ControllerBase
     {
         [HttpGet]
-        public SynonymResponse Get(string word)
+        public Response Get(string word)
         {
-            IService synonymService = new SynonymService(new ValidateWordSynonym(word), new GetSynonym(word, new HttpService()));
-            SynonymResponse response = (SynonymResponse)synonymService.Action();
-            response.Word = word;
+            IValidate validate = new ValidateWordSynonym(word);
+            IGet get = new GetSynonym(word, new HttpService());
+            IService service = new ServiceBase(validate, get);
+            Response response = service.Action();
             return response;
         }
     }

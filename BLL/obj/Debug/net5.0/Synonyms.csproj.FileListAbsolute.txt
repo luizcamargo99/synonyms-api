@@ -1,0 +1,11 @@
+C:\Projetos Academicos\Words API\src\BLL\bin\Debug\net5.0\Synonyms.deps.json
+C:\Projetos Academicos\Words API\src\BLL\bin\Debug\net5.0\Synonyms.dll
+C:\Projetos Academicos\Words API\src\BLL\bin\Debug\net5.0\ref\Synonyms.dll
+C:\Projetos Academicos\Words API\src\BLL\bin\Debug\net5.0\Synonyms.pdb
+C:\Projetos Academicos\Words API\src\BLL\obj\Debug\net5.0\Synonyms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos Academicos\Words API\src\BLL\obj\Debug\net5.0\Synonyms.AssemblyInfoInputs.cache
+C:\Projetos Academicos\Words API\src\BLL\obj\Debug\net5.0\Synonyms.AssemblyInfo.cs
+C:\Projetos Academicos\Words API\src\BLL\obj\Debug\net5.0\Synonyms.csproj.CoreCompileInputs.cache
+C:\Projetos Academicos\Words API\src\BLL\obj\Debug\net5.0\Synonyms.dll
+C:\Projetos Academicos\Words API\src\BLL\obj\Debug\net5.0\ref\Synonyms.dll
+C:\Projetos Academicos\Words API\src\BLL\obj\Debug\net5.0\Synonyms.pdb

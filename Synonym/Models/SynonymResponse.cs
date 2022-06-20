@@ -5,8 +5,8 @@ namespace Synonym.Models
 {
     public class SynonymResponse : Response
     {
-        public List<string> Synonyms { get; set; }
         public string Word { get; set; }
+        public List<string> Synonyms { get; set; }       
 
         public SynonymResponse()
         {

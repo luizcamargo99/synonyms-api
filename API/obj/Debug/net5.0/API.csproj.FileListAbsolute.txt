@@ -11,14 +11,11 @@ C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\BLL.dll
-C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\BLL.pdb
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.csproj.AssemblyReference.cache
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.AssemblyInfo.cs
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.csproj.CoreCompileInputs.cache
-C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cs
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cache
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.Manifest.cache
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.xml
@@ -29,3 +26,7 @@ C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.dll
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\ref\API.dll
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.pdb
 C:\Projetos Academicos\Words API\src\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Root.dll
+C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Synonym.dll
+C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Synonym.pdb
+C:\Projetos Academicos\Words API\src\API\bin\Debug\net5.0\Root.pdb

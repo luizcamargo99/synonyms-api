@@ -76,14 +76,27 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "BLL/1.0.0": {
+      "Root/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/BLL.dll": {}
+          "bin/placeholder/Root.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BLL.dll": {}
+          "bin/placeholder/Root.dll": {}
+        }
+      },
+      "Synonym/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Root": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Synonym.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Synonym.dll": {}
         }
       }
     }
@@ -196,16 +209,21 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "BLL/1.0.0": {
+    "Root/1.0.0": {
       "type": "project",
-      "path": "../BLL/BLL.csproj",
-      "msbuildProject": "../BLL/BLL.csproj"
+      "path": "../Root/Root.csproj",
+      "msbuildProject": "../Root/Root.csproj"
+    },
+    "Synonym/1.0.0": {
+      "type": "project",
+      "path": "../Synonym/Synonym.csproj",
+      "msbuildProject": "../Synonym/Synonym.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BLL >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "Synonym >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -239,8 +257,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Projetos Academicos\\Words API\\src\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Projetos Academicos\\Words API\\src\\BLL\\BLL.csproj"
+            "C:\\Projetos Academicos\\Words API\\src\\Synonym\\Synonym.csproj": {
+              "projectPath": "C:\\Projetos Academicos\\Words API\\src\\Synonym\\Synonym.csproj"
             }
           }
         }

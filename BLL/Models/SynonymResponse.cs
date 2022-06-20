@@ -4,12 +4,12 @@ namespace BLL.Models
 {
     public class SynonymResponse : Response
     {
-        public List<string> SynonymsList { get; set; }
+        public List<string> Synonyms { get; set; }
         public string Word { get; set; }
 
         public SynonymResponse()
         {
-            SynonymsList = new List<string>();
+            Synonyms = new List<string>();
         }
     }
 }

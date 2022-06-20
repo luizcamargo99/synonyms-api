@@ -39,7 +39,7 @@ namespace BLL.Services
             {
                 int indexStart = index + _numberToAdjustSubstring;
                 int indexEnd = content.IndexOf(_tagLinkHtml, indexStart);
-                response.SynonymsList.Add(content.Substring(indexStart, indexEnd - indexStart));
+                response.Synonyms.Add(content.Substring(indexStart, indexEnd - indexStart));
             }
 
             return response;
